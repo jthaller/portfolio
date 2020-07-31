@@ -67,20 +67,23 @@
                             <div class="subheading mb-3">Language: Python</div>
                             <p>I trained a naive bayes nerual network to be able to identify which one of my facebook friends sent an unlabeled message.
                                 Using personal messages as training data, I then took messages from a group chat and had the classifier determine which message
-                                was sent by which person.
+                                was sent by which person. Instead of reusing my HTML scraping from the Message Counter project, I decided to download my JSON messanger
+                                files from Facebook, and load and manipulate the data from there.
                             </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/fb_friend_identifier">Github Repository</a></span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <h3 class="mb-0">Facebook Message Counter</h3>
+                            <div class="subheading mb-3">Language: Python</div>
+                            <p> The purpose of this project was to see messaging trends between my friend and me. Who sends more messages? Are there any anomilies? 
+                                The main challenge of this project was to scrape the data and organize into a usable format. <code>BeautifulSoup4</code>
+                                was used in the HTML scrape, with the message content and senders saved into CSV spreadsheets. The CSV's were then loaded into a Pandas
+                                DataFrame, where I could write queries to count message numbers according to time-stamps.
+                            </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
-                    </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
                     </div>
                 </div>
             </section>
@@ -95,7 +98,7 @@
                             <div class="subheading mb-3">Masters in Materials Science Dual-Degree Program</div>
                             <div><b>Technical University of Munich + Ludwig Maximilians University</b></div>
                             <p>Joint M.Sc. in Geomaterials and Geochemistry</p>
-                            <div><b>Adam Mickiwicz University Poznan, Poland</b></div>
+                            <div><b>Adam Mickiewicz University Poznan, Poland</b></div>
                             <p>M.Sc. in Physics of Advanced Materials for Energy Processing</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Sept. 2019 - Aug. 2021 (in progress)</span></div>
