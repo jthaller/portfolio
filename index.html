@@ -44,7 +44,7 @@
                         <span class="text-primary">Thaller</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Boston Based. Studying in Europe. Looking to move to Manhattan.
+                        Boston Based. Studying in Europe. Looking to move to NYC.
                         <a href="mailto:name@email.com">jkt2@williams.edu</a>
                     </div>
                     <p class="lead mb-5">I am a computational materials engineer interested in applying deep learning to better understand our world.</p>
@@ -90,10 +90,39 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Titanic</h3>
                             <div class="subheading mb-3">Python</div>
-                            <p> The classic first project for anyones machine learning journey.
+                            <p> The classic first project for anyones machine learning journey. I tried a variety of machine learning models, eventually deciding
+                                to tune the hyperparameters for XG-Boost and include a new interaction term between fare paid and passenger's sex. I spent some time 
+                                stacking several models, but ended up abandoning this approach as it is impractical for most professional applications.
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://www.kaggle.com/fusshandschuhe/titanic-data-science-solutions">Github Repository</a></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://www.kaggle.com/fusshandschuhe/titanic-data-science-solutions">Jupyter Notebook</a></span> <br> <span class="text-primary"><a href="https://github.com/jthaller/Titanic">Github Repository</a></span> </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Semiconductor Properties Prediction</h3>
+                            <div class="subheading mb-3">Python</div>
+                            <p> In this project, I use machine learning to optimize the transport integral of tetracene. Organic semiconductors are responsible 
+                                for the OLED panels found on high end TV's and cell phone screens. Computing electronic properties 
+                                of theoretical materials, such as the molecular transport integral, is computationally expensive. Using machine learning, we can 
+                                predict (and optimize) the transport integral of a material. Given the coulomb interactions (found as a function of the structure), we 
+                                predict the transport integrals. My predictions were 93% accurate when tested against the unseen professor's test data for final grading. 
+                                PCA was critical to reduce the computational cost, without affecting performance. The best method for the predictions was a neural net made 
+                                using Keras, though Kernal Ridge performed quite well. All tests were run with k-fold cross-validation. 
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/Tetracene_TI_ML">Github Repository</a></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Image Classifier</h3>
+                            <div class="subheading mb-3">Python</div>
+                            <p>I've written several CIFAR-10 and MNIST classifier projects, and will include most of them here. The first classifier was a Neural network
+                                written from scratch. I used a pretty simple architecture, and obtained un-remarkable results. I then wrote a more complicated network
+                                using Py-Torch lighting. Then I improved upon it by implimenting CNN's, then RNN's, and finally including transfer learning. This was all work
+                                for a Deep Learning class at the Technical University of Munich. Because these are HW solution, I have to keep my Colab Notebooks and Github Repository
+                                private, at least for a few years.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -116,7 +145,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Williams College</h3>
-                            <div class="subheading mb-3">Bachelor of Arts, with Honors</div>
+                            <div class="subheading mb-3">Bachelor of Arts with Honors</div>
                             <div>Physics - Pre-Engineering Studies</div>
                             <p>GPA: 3.3</p>
                             <p><a href="https://github.com/jthaller/Diplomarbeit/blob/master/JKT_MainDraft.pdf">Thesis</a> </p>
@@ -131,7 +160,7 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <div class="subheading mb-3">Programming Languages & Competence Levels</div>
                     <ul class="list-inline dev-icons">
                         
                         <!-- <li class="list-inline-item"><i class="fab fa-python"></i></li>
@@ -150,23 +179,27 @@
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Python, 5 years
+                            Python, 5 years. My preferred language.
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            MATLAB, 5 years
+                            MATLAB, 5 years. Just as competant.
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Java, 7 years
+                            Java, 7 years. My first language. 
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            HTML, 4 years. Only enough to write a few websites and scrape data.
+                            Mathematica, 4 years. Used for physics labs and HW in college.
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            SQL, 1 year. Just familiarity from a Code Academy course. I haven't needed it yet.
+                            HTML, 4 years. Enough to write a few websites and scrape data.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            SQL, 1 year. Just familiarity from a Code Academy course.
                         </li>
                     </ul>
                 </div>
@@ -176,13 +209,13 @@
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
-                    <p>I enjoy staying in shape and being outdoors. At Williams I was a sprinter and one of the captains of the Track team.
-                        Since graduating, I've been trying to transition to running long distance. It's a tough transition, and I haven't had much success so far.
-
-                        I come from a very musical family, and have always appreciated jazz and had a soft spot for DCI and college marching bands. I'm not sure if I'll
-                        ever pick up my bassoon again, but I try and support classical music when I have the chance.
+                    <p>I never miss a Liverpool or Patriots game, though with Tom Brady gone, who knows. I'm passionate about coffee and watches.
                     </p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                    <p>
+                    I was a sprinter and captain of the Track team in college, but am trying to transition to distance running. It's a hard transition.
+                    I'm not sure I'll ever pick up my bassoon again, but I still enjoy playing jazz piano every day.
+                    </p>
+                   
                 </div>
             </section>
             <hr class="m-0" />
@@ -210,6 +243,10 @@
                         <li>
                             <span class="fa-li"><i class="fas fa-atom"></i></span>
                             Condensed Matter Physics
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-atom"></i></span>
+                            Statistical Mechanics
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-calculator"></i></span>
