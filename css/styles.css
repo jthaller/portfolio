@@ -419,6 +419,22 @@ h6, .h6 {
   line-height: 1.2;
 }
 
+/* added by me  */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center80 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
