@@ -107,10 +107,11 @@
                             <p> In this project, I use machine learning to optimize the transport integral of tetracene. Organic semiconductors are responsible 
                                 for the OLED panels found on high end TV's and cell phone screens. Computing electronic properties 
                                 of theoretical materials, such as the molecular transport integral, is computationally expensive. Using machine learning, we can 
-                                predict (and optimize) the transport integral of a material. Given the coulomb interactions (found as a function of the structure), we 
-                                predict the transport integrals. My predictions were 93% accurate when tested against the unseen professor's test data for final grading. 
-                                <code>PCA</code> was critical to reduce the computational cost, without affecting performance. The best method for the predictions was a neural net made 
-                                using <code>Keras</code>, though <code>Kernal Ridge</code> performed quite well. All tests were run with <code>k-fold cross-validation</code>. 
+                                predict the transport integral of a material much more quickly, allowing for more rapid structural iternations. Given the coulomb interactions
+                                (calculated as a function of the atomic positions and structure), I predicted the transport integrals. 
+                                <code>PCA</code> was critical to reduce the computational cost, without affecting performance. The best method found for the predictions was a neural net made 
+                                using <code>Keras</code>, though <code>Kernal Ridge</code> performed quite well. All tests were run with <code>k-fold cross-validation</code> and a random grid
+                                search was used for <code>hyperparameter tuning</code>.
                             </p>
                             <img src="https://www.acs.org/content/dam/acsorg/molecule/archive-new/tetracene-3d.png" class="center">
                         <!-- </div> -->
@@ -138,7 +139,7 @@
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">ERAMSUS MUNDUS</h3>
+                            <h3 class="mb-0">ERASMUS MUNDUS</h3>
                             <div class="subheading mb-3">Masters in Materials Science Dual-Degree Program</div>
                             <div><b>Technical University of Munich + Ludwig Maximilians University</b></div>
                             <p>Joint M.Sc. in Geomaterials and Geochemistry</p>
