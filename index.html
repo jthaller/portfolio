@@ -29,8 +29,8 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#coursework">Coursework</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                 </ul>
             </div>
         </nav>
@@ -110,7 +110,7 @@
                                 predict the transport integral of a material much more quickly, allowing for more rapid structural iternations. Given the coulomb interactions
                                 (calculated as a function of the atomic positions and structure), I predicted the transport integrals. 
                                 <code>PCA</code> was critical to reduce the computational cost, without affecting performance. The best method found for the predictions was a neural net made 
-                                using <code>Keras</code>, though <code>Kernal Ridge</code> performed quite well. All tests were run with <code>k-fold cross-validation</code> and a random grid
+                                using <code>Keras</code>, though <code>Kernal Ridge</code> performed quite well. <code>K-fold cross-validation</code> was implimented in training and a random grid
                                 search was used for <code>hyperparameter tuning</code>.
                             </p>
                             <img src="https://www.acs.org/content/dam/acsorg/molecule/archive-new/tetracene-3d.png" class="center">
@@ -153,7 +153,7 @@
                             <h3 class="mb-0">Williams College</h3>
                             <div class="subheading mb-3">Bachelor of Arts with Honors</div>
                             <div>Physics - Pre-Engineering Studies</div>
-                            <p>GPA: 3.3</p>
+                            <!-- <p>GPA: 3.3</p> -->
                             <p><a href="https://github.com/jthaller/Diplomarbeit/blob/master/JKT_MainDraft.pdf">Thesis</a> </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Sept. 2015 - May 2019</span></div>
@@ -217,27 +217,15 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>
-                    I'm happiest in life when watching the Liverpool game with a fresh cup of coffee, or watching the Patriots
-                    with good company and a beer. 
-            
-                    When the weather is nice, I enjoy running. I was a sprinter and captain of the Track team in college, but I'm
-                    trying to make the great transition to distance running.
-                    I'm not sure I'll ever pick up my bassoon again, but I still enjoy playing jazz piano every day.
-                    </p>
-                   
-                </div>
-            </section>
-            <hr class="m-0" />
             <!-- Coursework-->
             <section class="resume-section" id="coursework">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Relevant Coursework</h2>
                     <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-laptop"></i></span>
+                            Intro to Machine Learning
+                        </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-laptop"></i></span>
                             Deep Learning
@@ -277,6 +265,27 @@
                     </ul>
                 </div>
             </section>
+            <!-- Interests-->
+            <section class="resume-section" id="interests">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Interests</h2>
+                    <p>
+                    I'm happiest in life when watching the Liverpool game with a fresh cup of coffee, or watching the Patriots
+                    with good company and a beer. 
+            
+                    When the weather is nice, I enjoy running. I was a sprinter and captain of the Track team in college, but I'm
+                    trying to make the great transition to distance running.
+                    I'm not sure I'll ever pick up my bassoon again, but I still enjoy playing jazz piano every day.
+                    </p>
+                    <p>
+                    To see what I've been working on, checkout out my <a href = "https://jthaller.github.io">blog</ahref></a>. Each week I recap <i>what I've done</i>,
+                    <i>what I've learned</i>, and decide <i>what I'll do next</i>. I've found this helps consolidate what I've learned, as well as keep me 
+                    accountable for improving daily as a scientist and programmer.
+                    </p>
+                   
+                </div>
+            </section>
+            <hr class="m-0" />
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
