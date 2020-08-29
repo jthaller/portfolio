@@ -65,6 +65,24 @@
                     <h2 class="mb-5">Projects</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0">Semiconductor Properties Prediction</h3>
+                            <div class="subheading mb-3">Python</div>
+                            <p> In this project, I used machine learning to optimize the transport integral of tetracene. Organic semiconductors are responsible 
+                                for the OLED panels found on high end TV's and cell phone screens. Unfortunately, computing electronic properties 
+                                of theoretical materials, such as the molecular transport integral, is computationally expensive. Using machine learning, we can 
+                                predict the transport integral of a material much more quickly, allowing for more rapid structural iterations. Given the coulomb interactions
+                                (calculated as a function of the atomic positions and structure), I predicted the corresponding transport integrals. 
+                                <code>PCA</code> was critical to reduce the computational cost, without affecting performance. The best method found for the predictions was a neural net built 
+                                using <code>Keras</code>, though <code>Kernal Ridge Regression</code> performed quite well. <code>K-fold cross-validation</code> was implemented during training and a random grid
+                                search was used for <code>hyperparameter tuning</code>.
+                            </p>
+                            <img src="https://www.acs.org/content/dam/acsorg/molecule/archive-new/tetracene-3d.png" class="center">
+                        <!-- </div> -->
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/Tetracene_TI_ML">Github Repository</a></span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">Friend Identifier</h3>
                             <div class="subheading mb-3">Python</div>
                             <p>I trained a <code>naive bayes nerual network</code> to be able to identify which one of my facebook friends sent an unlabeled message.
@@ -100,24 +118,7 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"><a href="https://www.kaggle.com/fusshandschuhe/titanic-data-science-solutions">Jupyter Notebook</a></span> <br> <span class="text-primary"><a href="https://github.com/jthaller/Titanic">Github Repository</a></span> </div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Semiconductor Properties Prediction</h3>
-                            <div class="subheading mb-3">Python</div>
-                            <p> In this project, I use machine learning to optimize the transport integral of tetracene. Organic semiconductors are responsible 
-                                for the OLED panels found on high end TV's and cell phone screens. Computing electronic properties 
-                                of theoretical materials, such as the molecular transport integral, is computationally expensive. Using machine learning, we can 
-                                predict the transport integral of a material much more quickly, allowing for more rapid structural iternations. Given the coulomb interactions
-                                (calculated as a function of the atomic positions and structure), I predicted the transport integrals. 
-                                <code>PCA</code> was critical to reduce the computational cost, without affecting performance. The best method found for the predictions was a neural net made 
-                                using <code>Keras</code>, though <code>Kernal Ridge</code> performed quite well. <code>K-fold cross-validation</code> was implimented in training and a random grid
-                                search was used for <code>hyperparameter tuning</code>.
-                            </p>
-                            <img src="https://www.acs.org/content/dam/acsorg/molecule/archive-new/tetracene-3d.png" class="center">
-                        <!-- </div> -->
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/Tetracene_TI_ML">Github Repository</a></span></div>
-                    </div>
+                    
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Image Classifier</h3>
@@ -166,7 +167,7 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Competence Levels</div>
+                    <div class="subheading mb-3">Programming Languages & Competency</div>
                     <ul class="list-inline dev-icons">
                         
                         <!-- <li class="list-inline-item"><i class="fab fa-python"></i></li>
