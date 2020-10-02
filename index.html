@@ -73,7 +73,7 @@
                                 predict the transport integral of a material much more quickly, allowing for more rapid structural iterations. Given the coulomb interactions
                                 (calculated as a function of the atomic positions and structure), I predicted the corresponding transport integrals. 
                                 <code>PCA</code> was critical to reduce the computational cost, without affecting performance. The best method found for the predictions was a neural net built 
-                                using <code>Keras</code>, though <code>Kernal Ridge Regression</code> performed quite well. <code>K-fold cross-validation</code> was implemented during training and a random grid
+                                using <code>Keras</code>, though <code>Kernel Ridge Regression</code> performed quite well. <code>K-fold cross-validation</code> was implemented during training and a random grid
                                 search was used for <code>hyperparameter tuning</code>.
                             </p>
                             <img src="https://www.acs.org/content/dam/acsorg/molecule/archive-new/tetracene-3d.png" class="center">
@@ -85,7 +85,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Friend Identifier</h3>
                             <div class="subheading mb-3">Python</div>
-                            <p>I trained a <code>naive bayes nerual network</code> to be able to identify which one of my facebook friends sent an unlabeled message.
+                            <p>I trained a <code>naive bayes neural network</code> to be able to identify which one of my facebook friends sent an unlabeled message.
                                 Using personal messages as training data, I then took messages from a group chat and had the classifier determine which message
                                 was sent by which person. Instead of reusing my HTML scraping from the Message Counter project, I decided to download my JSON messanger
                                 files from Facebook, and load and manipulate the data from there.
@@ -97,7 +97,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Facebook Message Counter</h3>
                             <div class="subheading mb-3">Python, HTML</div>
-                            <p> The purpose of this project was to see messaging trends between my friend and me. Who sends more messages? Are there any anomilies? 
+                            <p> The purpose of this project was to see messaging trends between my friend and me. Who sends more messages? Are there any anomaly? 
                                 The main challenge of this project was to scrape the data and organize into a usable format. <code>BeautifulSoup4</code>
                                 was used in the HTML scrape, with the message content and senders saved into CSV spreadsheets. The CSV's were then loaded into a <code>Pandas
                                 DataFrame</code>, where I could write queries to count message numbers according to time-stamps. <code>Matplotlib</code> and <code>Seaborn
@@ -111,7 +111,7 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Titanic</h3>
                             <div class="subheading mb-3">Python</div>
-                            <p> The classic first project for anyones machine learning journey. I tried a variety of machine learning models, eventually deciding
+                            <p> The classic first project for anyone's machine learning journey. I tried a variety of machine learning models, eventually deciding
                                 to tune the hyperparameters for <code>XG-Boost</code> and include a new interaction term between fare paid and passenger's sex. I spent some time 
                                 stacking several models, but ended up abandoning this approach as it is impractical for most professional applications.
                             </p>
@@ -125,7 +125,7 @@
                             <div class="subheading mb-3">Python</div>
                             <p>I've written several CIFAR-10 and MNIST classifier projects, and will include most of them here. The first classifier was a <code>neural network</code>
                                 written from scratch. I used a pretty simple architecture, and obtained un-remarkable results. I then wrote a more complicated network
-                                using <code>Py-Torch lighting</code>. Then I improved upon it by implimenting <code>CNN's</code>, then <code>RNN's</code>, and finally including transfer learning. This was all work
+                                using <code>Py-Torch lighting</code>. Then I improved upon it by implementing <code>CNN's</code>, then <code>RNN's</code>, and finally including transfer learning. This was all work
                                 for a Deep Learning class at the Technical University of Munich. Because these are HW solution, I have to keep my Colab Notebooks and Github Repository
                                 private, at least for a few years.
                             </p>
