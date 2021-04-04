@@ -44,11 +44,12 @@
                         <span class="text-primary">Thaller</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Boston Based. Looking for data science and software engineering roles in NYC and Boston.
+                        Boston Based. Looking for data science and software engineering roles in NYC.
                         <a href="mailto:jkt2@alumni.williams.edu">jkt2@alumni.williams.edu</a>
                     </div>
-                    <p class="lead mb-5">I am a materials engineer interested in applying deep learning to better understand our world.
-                        I specialize in natural language processing and computational materials design.
+                    <p class="lead mb-5">I'm a grad student finishing my masters degrees in materials science/engineering. I have a passion for beautiful data visualization and 
+                        <!-- I'm Interested in applying deep learning to better understand our world. -->
+                        specialize in computational materials design and natural language processing.
                     </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/jeremy-thaller/"><i class="fab fa-linkedin-in"></i></a>
@@ -63,6 +64,7 @@
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
+                    <!-- Semiconductor Project -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Semiconductor Properties Prediction</h3>
@@ -76,23 +78,40 @@
                                 using <code>Keras</code>, though <code>Kernel Ridge Regression</code> performed quite well. <code>K-fold cross-validation</code> was implemented during training and a random grid
                                 search was used for <code>hyperparameter tuning</code>.
                             </p>
-                            <img src="https://www.acs.org/content/dam/acsorg/molecule/archive-new/tetracene-3d.png" class="center">
+                            <!-- <img src="https://www.acs.org/content/dam/acsorg/molecule/archive-new/tetracene-3d.png" class="center"> -->
+                            <img src="https://cdn-0.enacademic.com/pictures/enwiki/84/Tetracene-3D-balls.png" class="center">
                         <!-- </div> -->
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/Tetracene_TI_ML">Github Repository</a></span></div>
                     </div>
+                    <!-- BNL Thesis -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Nanoparticle Disorder Neural Network</h3>
+                            <div class="subheading mb-3">Python, Mathematica</div>
+                            <p> In this project, I used supervised machine learning to predict the disorder in metallic nanoparticles. Given a XANES (X-ray Absorption Near Edge Sepctroscopy) 
+                                spectrum for the system, my neural network predicts the debye-waller factor, i.e. the standard deviation of the gaussian spread from the partial radial 
+                                distribution function. Due to the nature of the work, I can't link my github repository or thesis until after publication. Below, I've included a nice visualization 
+                                of in <code> Plotly</code> showcasing the isotropically-stretched nanoparticles I generated for simulation purposes. 
+                            </p>
+                            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://jthaller.github.io/plotly_isotropic_stretch/" height="500" width="100%"></iframe>
+                        </div>
+                    </div>
+                    <!-- Facebook Friend Identifier Project -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Friend Identifier</h3>
                             <div class="subheading mb-3">Python</div>
-                            <p>I trained a <code>naive bayes neural network</code> to be able to identify which one of my facebook friends sent an unlabeled message.
-                                Using personal messages as training data, I then took messages from a group chat and had the classifier determine which message
-                                was sent by which person. Instead of reusing my HTML scraping from the Message Counter project, I decided to download my JSON messanger
+                            <p>I trained a <code>naive bayes classifier</code> to be able to identify which one of my facebook friends sent an unlabeled message.
+                                Using personal messages as training data, I then took messages from a group chat (unseen by the classifier) and had the program determine which
+                                messages were sent by which person. The program also can make a classification based on a single unseen message.
+                                Instead of reusing my HTML scraping from the Message Counter project, I decided to download my JSON messanger
                                 files from Facebook, and load and manipulate the data from there.
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/fb_friend_identifier">Github Repository</a></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/fb_friend_identifier">Github Repository</a></span> <br> <span class="text-primary"><a href="https://jthaller.github.io/weekly/Weekly21/">Explanatory Blog Post</a></span> </div>
                     </div>
+                    <!--  -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Facebook Message Counter</h3>
@@ -103,7 +122,7 @@
                                 DataFrame</code>, where I could write queries to count message numbers according to time-stamps. <code>Matplotlib</code> and <code>Seaborn
                                 </code> were used for data visualization.
                             </p>
-                            <img src="https://github.com/jthaller/fb_message_counter/blob/master/example_images/David_Thaller_friendship_comparison.png?raw=true"  class="center80">
+                            <img src="https://github.com/jthaller/fb_message_counter/blob/master/example_images/David_Thaller_friendship_comparison.png?raw=true"  class="center99">
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/fb_message_counter">Github Repository</a></span></div>
                     </div>
@@ -118,7 +137,7 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"><a href="https://www.kaggle.com/fusshandschuhe/titanic-data-science-solutions">Jupyter Notebook</a></span> <br> <span class="text-primary"><a href="https://github.com/jthaller/Titanic">Github Repository</a></span> </div>
                     </div>
-                    
+                    <!--  -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Image Classifier</h3>
@@ -143,14 +162,17 @@
                             <h3 class="mb-0">ERASMUS MUNDUS</h3>
                             <div class="subheading mb-3">Masters in Materials Science Dual-Degree Program</div>
                             <div><b>Ludwig Maximilians and Technical University of Munich, Germany</b></div>
-                            <p>Joint M.Sc. in Geomaterials and Geochemistry</p>
+                            <!-- <p>Joint M.Sc. in Geomaterials and Geochemistry</p> -->
+                            <p>Joint M.S. in Materials Science and Engineering</p>
                             <div><b>Adam Mickiewicz University Poznan, Poland</b></div>
-                            <p>M.Sc. in Physics of Advanced Materials for Energy Processing</p>
+                            <!-- <p>M.Sc. in Physics of Advanced Materials for Energy Processing</p> -->
+                            <p>M.S. in Applied Physics</p>
                             <div><b>Brookhaven National Lab, New York</b></div>
                             <p>Thesis: Applying Machine Learning to Synchrotron Data</p>
-                            <div class="flex-shrink-0"><span class="text-primary">Sept. 2019 - Aug. 2021 (in progress)</span></div>
-                            <div></div>
+                            
+                            <!-- <div></div> -->
                         </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Sept. 2019 - Aug. 2021 (in progress)</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
