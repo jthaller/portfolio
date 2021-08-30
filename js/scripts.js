@@ -56,7 +56,8 @@ written permission of Adobe.
 
 /* Pass the embed mode option here */
 const viewerConfig = {
-    embedMode: "LIGHT_BOX"
+    embedMode: "LIGHT_BOX",
+    defaultViewMode: "FIT_PAGE"
 };
 
 /* Wait for Adobe Document Services PDF Embed API to be ready and enable the View PDF button */
