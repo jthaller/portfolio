@@ -10131,11 +10131,13 @@ p.lead {
 }
 .social-icons .social-icon:hover {
   background-color: #09337d;
+  cursor: pointer
 }
 
 .dev-icons {
   font-size: 3rem;
 }
+
 
 section.resume-section {
   display: flex;

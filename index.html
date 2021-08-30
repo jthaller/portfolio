@@ -65,7 +65,21 @@
                         <a class="social-icon" href="https://www.github.com/jthaller"><i class="fab fa-github"></i></a>
                         <a class="social-icon" href="https://www.kaggle.com/fusshandschuhe"><i class="fab fa-kaggle"></i></a>
                         <a class="social-icon" href="https://jthaller.github.io"><i class="fas fa-rss"></i></a>
+                        <a class="social-icon" title="Preview Printable Resume" onclick="previewFile()"><i class="fas fa-id-card"></i></a>
+                            <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
                     </div>
+                    <!--Preview Adobe PDF with Embed API-->
+                    <!-- <button type="button" id="view-pdf-btn" onclick="previewFile()" style="cursor: pointer; width: 520px; padding: 10px; font-family: 'Arial'; font-size: 15px; color: #ededed; border-radius: 5px; border: 1px #404040; background-color:#1473e6; margin: 100px 0 0 80px;" disabled>Preview Printable Resume</button>
+                        <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script> -->
+                    <!-- <script type="text/javascript">
+                        document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+                            var adobeDCView = new AdobeDC.View({clientId: "<3c54d68ce6b84ee2a6b0474a66317f7d>"});
+                            adobeDCView.previewFile({
+                                content:{location: {url: "https://raw.githubusercontent.com/jthaller/short_resume/fd9a6f99c33061fbd4b50cb3b3e7e79f1537545a/Jeremy_Thaller_Resume.pdf"}},
+                                metaData:{fileName: "Jeremy_Thaller_Resume.pdf"}
+                            }, {embedMode: "LIGHT_BOX"});
+                        });
+                    </script> -->
                 </div>
             </section>
             <hr class="m-0" />
