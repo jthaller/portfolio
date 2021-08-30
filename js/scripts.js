@@ -70,7 +70,7 @@ function previewFile()
     /* Initialize the AdobeDC View object */
     var adobeDCView = new AdobeDC.View({
         /* Pass your registered client id */
-        clientId: "<3c54d68ce6b84ee2a6b0474a66317f7d>"
+        clientId: "3c54d68ce6b84ee2a6b0474a66317f7d"
     });
 
     /* Invoke the file preview API on Adobe DC View object */
