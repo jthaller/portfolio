@@ -80,7 +80,7 @@ function previewFile()
         content: {
             /* Location of file where it is hosted */
             location: {
-                url: "https://raw.githubusercontent.com/jthaller/short_resume/565eb2e732b425e0291df93de9e0d12da192ae00/Jeremy_Thaller_Resume.pdf",
+                url: "https://raw.githubusercontent.com/jthaller/short_resume/13a63be8f2fc37a4927f52688c7c86796e835d8d/Jeremy_Thaller_Resume.pdf",
                 // url: "https://github.com/jthaller/short_resume/raw/master/Jeremy_Thaller_Resume.pdf"
                 /*
                 If the file URL requires some additional headers, then it can be passed as follows:-
