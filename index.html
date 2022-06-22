@@ -53,7 +53,7 @@
                         <span class="text-primary">Thaller</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Data Analyst in CryptoFintech
+                        Data Scientist in CryptoFintech 
                         <a href="mailto:jeremy@thaller.dev">jeremy@thaller.dev</a>
                     </div>
                     <p class="lead mb-5">I'm a dual MS engineer with degrees in materials science and applied physics. I have a passion for beautiful data visualization and 
@@ -87,6 +87,32 @@
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
+                    <!-- Semiconductor Project -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Accredited Investors: Binary Classification and Probabilities</h3>
+                            <div class="subheading mb-3">Python</div>
+                            <p> 
+                                To be elligible for accredidation, a user must fulfill certain criteria based on income, net-worth, marrital status, and home-ownership. Through <code>data augmentation</code>,
+                                I was able to aquire a rough dataset of the features needed for classification; however, within this dataset, there still remained a large subset of users with incomplete
+                                data. To distill which of these "nebulous" users were in fact elligible for accredidation, I utilized supervised machine learning. Through extensive <code>feature cleaning</code>,
+                                <code>imputation</code>, <code>K-fold cross-validation</code>, and <code>sk-learn pipelines</code>, I created a <code>Random Forest</code>
+                                model capable of predicting which users were elligible with 98.2% accuracy, 99.9% precision, and 86% recall. These scores are even higher when looking at the "edges" of the
+                                probability histogram. To conclude the project, I weighed the <code>tradeoff between precision and recall</code> via an <code>ROC curve</code> (AUC=.986).
+                            </p>
+                            <!-- <img src="https://www.acs.org/content/dam/acsorg/molecule/archive-new/tetracene-3d.png" class="center"> -->
+                            <!-- <div class="wrap"> -->
+                                <!-- <img src="assets/img/AI_results_slide.png" width="50%"> />
+                                <img src="assets/img/roc.svg" height="500" width="50%" />
+                            </div> -->
+                            
+                            <img src="assets/img/AI_results_slide.png" width="80%" class="center99">
+                            <!-- <img src="assets/img/roc.svg" class="center80"> -->
+ 
+                        <!-- </div> -->
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/Tetracene_TI_ML">Github Repository</a></span></div>
+                    </div>
                     <!-- Semiconductor Project -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -213,7 +239,7 @@
                             <!-- <p>M.Sc. in Physics of Advanced Materials for Energy Processing</p> -->
                             <p>M.S. in Applied Physics</p>
                             <div><b>Brookhaven National Laboratory, New York</b></div>
-                            <p>Thesis: Investigation of Bond Strain Effects on XANES Spectra via Artificial Neural Networks</p>
+                            <p><a href="https://github.com/jthaller/BNL_Thesis/blob/main/MainDraft.pdf">Thesis: Investigation of Bond Strain Effects on XANES Spectra via Artificial Neural Networks</a></p>
                             
                             <!-- <div></div> -->
                         </div>
@@ -225,7 +251,7 @@
                             <div class="subheading mb-3">Bachelor of Arts with Honors</div>
                             <div>Physics - Pre-Engineering Studies</div>
                             <!-- <p>GPA: 3.3</p> -->
-                            <p><a href="https://github.com/jthaller/Diplomarbeit/blob/master/JKT_MainDraft.pdf">Thesis</a> </p>
+                            <p><a href="https://github.com/jthaller/Diplomarbeit/blob/master/JKT_MainDraft.pdf">Thesis: Towards an Adhesion Based Measurement of Strain-Dependent Surface Stress in Soft Solids</a> </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Sept. 2015 - May 2019</span></div>
                     </div>
@@ -248,7 +274,7 @@
                         <li class="list-inline-item"><i class="fab fa-html5"></i></li>             
                         <li class="list-inline-item"><i class="fas fa-database"></i></li>              
                         <li class="list-inline-item"></li><i class="fab fa-r-project"></i></li>
-
+<!-- ADD a Julia SVG logo here in grey -->
                     </ul>
                     
                     <ul class="fa-ul mb-0">
@@ -280,6 +306,10 @@
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             <strong>R</strong>, 1 year. Basic Familiarity.
                         </li>
+                        <!-- <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <strong>Julia</strong>, 1 year. Basic Familiarity.
+                        </li> -->
                     </ul>
                 </div>
             </section>
