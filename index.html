@@ -138,18 +138,21 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Nanoparticle Disorder Neural Network</h3>
                             <div class="subheading mb-3">Python, Mathematica</div>
-                            <p> In this project, I used supervised machine learning to predict disorder in metallic nanoparticles. Given a XANES (X-ray Absorption Near Edge Sepctroscopy) 
-                                spectrum for the material, my neural network, built with <code>TensorFlow</code>, predicts the mean relative squared displacement of atoms from their non-disordered,
+                            <p> In this project, I used <code>convolutional neural networks</code> to predict disorder in metallic nanoparticles. Given a XANES (X-ray Absorption Near Edge Sepctroscopy) 
+                                spectrum for the material, my neural network, built with <code>Keras</code>, predicts the mean relative squared displacement of atoms from their non-disordered,
                                 crystalline positions. This would allow researchers to quantify disorder <i>in situ</i>, rather than relying on supplementary measurements or collecting the full EXAFS (extended
                                 X-ray Absorption Fine Structure) data to approximate the debye-waller factor (a similar measurement of disorder). In previous work, training sets have been created through computationally
                                 intensive simluations, requiring days worth of running time on dedicated computing clusters. Instead, I have developed a new method for creating disordered-structure training data through
-                                clever statical averaging of non-disordered structures, reducing the computational cost to something that can be performed on a laptop in under an hour. 
+                                clever statical averaging of non-disordered structures, reducing the computational cost to something that can be performed on a laptop in under an hour. Once trained to predict disorder on
+                                simulation data, I utilized <code>transfer learning</code> to extend the network's predictive domain onto experimental data.
                                 <!-- debye-waller factor, i.e. the standard deviation of the gaussian spread from the radial 
                                 distribution function (a measure of disorder, characterizing how far ).  -->
-                                Due to the nature of the work, I can't link my github repository or thesis until after publication. Below, I've included a nice visualization 
-                                in <code> Plotly</code> showcasing a subset of the isotropically-stretched nanoparticles I generated for simulation purposes. 
+                                Due to the nature of the work, I can't link my github repository or thesis until after publication.
+                                <!-- Below, I've included a nice visualization  -->
+                                <!-- in <code> Plotly</code> showcasing a subset of the isotropically-stretched nanoparticles I generated for simulation purposes.  -->
                             </p>
-                            <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://jthaller.github.io/plotly_isotropic_stretch/" height="500" width="100%"></iframe>
+                            <!-- <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://jthaller.github.io/plotly_isotropic_stretch/" height="500" width="100%"></iframe> -->
+                            <img src="assets/img/pa_train-test-fixed.png" class="center80">
                         </div>
                     </div>
                     <!-- Facebook Friend Identifier Project -->
