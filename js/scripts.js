@@ -80,7 +80,7 @@ function previewFile()
         content: {
             /* Location of file where it is hosted */
             location: {
-                url: "https://raw.githubusercontent.com/jthaller/resume_url_hosting/e22248b7508bb232bd302dfd9c8cca9fa3c4989f/Jeremy_Thaller_Resume.pdf",
+                url: "https://raw.githubusercontent.com/jthaller/resume_url_hosting/88dc5de775cbab3073ab80273641d3bef78df128/Jeremy_Thaller_Resume.pdf",
 
                 // url: "https://github.com/jthaller/short_resume/raw/master/Jeremy_Thaller_Resume.pdf"
                 /*
