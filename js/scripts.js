@@ -3,7 +3,10 @@
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
     */
-    (function ($) {
+
+const GITHUB_URL = "https://raw.githubusercontent.com/jthaller/resume_url_hosting/32236b74a33e69f6e12ffd6354e38c95ddcc5ed4/Jeremy_Thaller_Resume.pdf"
+   
+   (function ($) {
     "use strict"; // Start of use strict
 
     // Smooth scrolling using jQuery easing
@@ -80,7 +83,7 @@ function previewFile()
         content: {
             /* Location of file where it is hosted */
             location: {
-                url: "https://raw.githubusercontent.com/jthaller/resume_url_hosting/88dc5de775cbab3073ab80273641d3bef78df128/Jeremy_Thaller_Resume.pdf",
+                url: "GITHUB_URL",
 
                 // url: "https://github.com/jthaller/short_resume/raw/master/Jeremy_Thaller_Resume.pdf"
                 /*
