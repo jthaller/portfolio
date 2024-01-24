@@ -63,6 +63,8 @@ const viewerConfig = {
     defaultViewMode: "FIT_PAGE"
 };
 
+const api_key = process.env.secret_adobe_api_key
+
 /* Wait for Adobe Document Services PDF Embed API to be ready and enable the View PDF button */
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
     document.getElementById("view-pdf-btn").disabled = false;
@@ -74,7 +76,7 @@ function previewFile()
     /* Initialize the AdobeDC View object */
     var adobeDCView = new AdobeDC.View({
         /* Pass your registered client id */
-        clientId: "3c54d68ce6b84ee2a6b0474a66317f7d"
+        clientId: api_key
     });
 
     /* Invoke the file preview API on Adobe DC View object */
@@ -83,7 +85,7 @@ function previewFile()
         content: {
             /* Location of file where it is hosted */
             location: {
-                url: "GITHUB_URL",
+                url: GITHUB_URL,
 
                 // url: "https://github.com/jthaller/short_resume/raw/master/Jeremy_Thaller_Resume.pdf"
                 /*
