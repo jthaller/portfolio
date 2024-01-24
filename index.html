@@ -14,12 +14,21 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M94VPG09VX"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-M94VPG09VX');
+        </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">WORK IN PROGRESS. NOT MY PORTFOLIO YET.</span>
+                <span class="d-block d-lg-none">Jeremy Thaller</span>
                 <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -29,8 +38,8 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#coursework">Coursework</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,16 +53,33 @@
                         <span class="text-primary">Thaller</span>
                     </h1>
                     <div class="subheading mb-5">
-                        THIS IS SUPER UNDER CONSTRUCTION CURRENTLY. Don't trust anything yet.
-                        <a href="mailto:name@email.com">name@email.com</a>
+                        Senior Data Scientist
+                        <a href="mailto:jeremy@thaller.dev">jeremy@thaller.dev</a>
                     </div>
-                    <p class="lead mb-5">I am a computational materials engineer interested in applying deep learning to better understand our world.</p>
+                    <p class="lead mb-5">I'm a dual MS engineer with degrees in materials science and applied physics. I have a passion for beautiful data visualization and 
+                        <!-- I'm Interested in applying deep learning to better understand our world. -->
+                        specialize in deep learning predictive modeling.
+                    </p>
                     <div class="social-icons">
-                        <a class="social-icon" href="https://www.linkedin.com/in/jeremy-thaller-76ba5511b/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="social-icon" href="https://www.github.com/jthaller"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://www.kaggle.com/fusshandschuhe"><i class="fab fa-kaggle"></i></a>
-                        <a class="social-icon" href="https://jthaller.github.io"><i class="fas fa-rss"></i></a>
+                        <a class="social-icon" title="LinkedIn" href="https://www.linkedin.com/in/jeremy-thaller/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" title="GitHub" href="https://www.github.com/jthaller"><i class="fab fa-github"></i></a>
+                        <a class="social-icon" title="Kaggle" href="https://www.kaggle.com/fusshandschuhe"><i class="fab fa-kaggle"></i></a>
+                        <a class="social-icon" title="Blog" href="https://thaller.dev"><i class="fas fa-blog"></i></a>
+                        <a class="social-icon" title="Preview Printable Resume" onclick="previewFile()"><i class="fas fa-file-pdf"></i></a>
+                            <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
                     </div>
+                    <!--Preview Adobe PDF with Embed API-->
+                    <!-- <button type="button" id="view-pdf-btn" onclick="previewFile()" style="cursor: pointer; width: 520px; padding: 10px; font-family: 'Arial'; font-size: 15px; color: #ededed; border-radius: 5px; border: 1px #404040; background-color:#1473e6; margin: 100px 0 0 80px;" disabled>Preview Printable Resume</button>
+                        <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script> -->
+                    <!-- <script type="text/javascript">
+                        document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+                            var adobeDCView = new AdobeDC.View({clientId: "<3c54d68ce6b84ee2a6b0474a66317f7d>"});
+                            adobeDCView.previewFile({
+                                content:{location: {url: "https://raw.githubusercontent.com/jthaller/short_resume/fd9a6f99c33061fbd4b50cb3b3e7e79f1537545a/Jeremy_Thaller_Resume.pdf"}},
+                                metaData:{fileName: "Jeremy_Thaller_Resume.pdf"}
+                            }, {embedMode: "LIGHT_BOX"});
+                        });
+                    </script> -->
                 </div>
             </section>
             <hr class="m-0" />
@@ -61,26 +87,142 @@
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
+                    <!-- Semiconductor Project -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Accredited Investors: Binary Classification and Probabilities</h3>
+                            <div class="subheading mb-3">Python</div>
+                            <p> 
+                                To be elligible for accredidation, a user must fulfill certain criteria based on income, net-worth, marrital status, and home-ownership. Through <code>data augmentation</code>,
+                                I was able to aquire a rough dataset of the features needed for classification; however, within this dataset, there still remained a large subset of users with incomplete
+                                data. To distill which of these "nebulous" users were in fact elligible for accredidation, I utilized supervised machine learning. Through extensive <code>feature cleaning</code>,
+                                <code>imputation</code>, <code>K-fold cross-validation</code>, and <code>sk-learn pipelines</code>, I created a <code>Random Forest</code>
+                                model capable of predicting which users were elligible with 98.2% accuracy, 99.9% precision, and 86% recall. These scores are even higher when looking at the "edges" of the
+                                probability histogram. To conclude the project, I weighed the <code>tradeoff between precision and recall</code> via an <code>ROC curve</code> (AUC=.986).
+                            </p>
+                            <!-- <img src="https://www.acs.org/content/dam/acsorg/molecule/archive-new/tetracene-3d.png" class="center"> -->
+                            <!-- <div class="wrap"> -->
+                                <!-- <img src="assets/img/AI_results_slide.png" width="50%"> />
+                                <img src="assets/img/roc.svg" height="500" width="50%" />
+                            </div> -->
+                            
+                            <img src="assets/img/AI_results_slide.png" width="80%" class="center99">
+                            <!-- <img src="assets/img/roc.svg" class="center80"> -->
+ 
+                        <!-- </div> -->
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/Tetracene_TI_ML">Github Repository</a></span></div>
+                    </div>
+                    <!-- Semiconductor Project -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Semiconductor Properties Prediction</h3>
+                            <div class="subheading mb-3">Python</div>
+                            <p> In this project, I used machine learning to optimize the transport integral of tetracene. Organic semiconductors are responsible 
+                                for the OLED panels found on high end TV's and cell phone screens. Unfortunately, computing electronic properties 
+                                of theoretical materials, such as the molecular transport integral, is computationally expensive. Using machine learning, we can 
+                                predict the transport integral of a material much more quickly, allowing for more rapid structural iterations. Given the coulomb interactions
+                                (calculated as a function of the atomic positions and structure), I predicted the corresponding transport integrals. 
+                                <code>PCA</code> was critical to reduce the computational cost, without affecting performance. The best method found for the predictions was a neural net built 
+                                using <code>Keras</code>, though <code>Kernel Ridge Regression</code> performed quite well. <code>K-fold cross-validation</code> was implemented during training and a random grid
+                                search was used for <code>hyperparameter tuning</code>.
+                            </p>
+                            <!-- <img src="https://www.acs.org/content/dam/acsorg/molecule/archive-new/tetracene-3d.png" class="center"> -->
+                            <img src="https://cdn-0.enacademic.com/pictures/enwiki/84/Tetracene-3D-balls.png" class="center">
+                        <!-- </div> -->
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/Tetracene_TI_ML">Github Repository</a></span></div>
+                    </div>
+                    <!-- BNL Thesis -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Nanoparticle Disorder Neural Network</h3>
+                            <div class="subheading mb-3">Python, Mathematica</div>
+                            <p> In this project, I used <code>convolutional neural networks</code> to predict disorder in metallic nanoparticles. Given a XANES (X-ray Absorption Near Edge Sepctroscopy) 
+                                spectrum for the material, my neural network, built with <code>Keras</code>, predicts the mean relative squared displacement of atoms from their non-disordered,
+                                crystalline positions. This would allow researchers to quantify disorder <i>in situ</i>, rather than relying on supplementary measurements or collecting the full EXAFS (extended
+                                X-ray Absorption Fine Structure) data to approximate the debye-waller factor (a similar measurement of disorder). In previous work, training sets have been created through computationally
+                                intensive simluations, requiring days worth of running time on dedicated computing clusters. Instead, I have developed a new method for creating disordered-structure training data through
+                                clever statical averaging of non-disordered structures, reducing the computational cost to something that can be performed on a laptop in under an hour. Once trained to predict disorder on
+                                simulation data, I utilized <code>transfer learning</code> to extend the network's predictive domain onto experimental data.
+                                <!-- debye-waller factor, i.e. the standard deviation of the gaussian spread from the radial 
+                                distribution function (a measure of disorder, characterizing how far ).  -->
+                                Due to the nature of the work, I can't link my github repository or thesis until after publication.
+                                <!-- Below, I've included a nice visualization  -->
+                                <!-- in <code> Plotly</code> showcasing a subset of the isotropically-stretched nanoparticles I generated for simulation purposes.  -->
+                            </p>
+                            <!-- <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://jthaller.github.io/plotly_isotropic_stretch/" height="500" width="100%"></iframe> -->
+                            <img src="assets/img/pa_train-test-fixed.png" class="center80">
+                        </div>
+                    </div>
+                    <!-- Facebook Friend Identifier Project -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Friend Identifier</h3>
-                            <div class="subheading mb-3">Language: Python</div>
-                            <p>I trained a naive bayes nerual network to be able to identify which one of my facebook friends sent an unlabeled message.
-                                Using personal messages as training data, I then took messages from a group chat and had the classifier determine which message
-                                was sent by which person.
+                            <div class="subheading mb-3">Python</div>
+                            <p>I trained a <code>naive Bayes classifier</code> to be able to identify which one of my Facebook friends sent an unlabeled message.
+                                Using personal messages as training data, I took messages from a group chat (unseen by the classifier) and had the program determine which
+                                messages were sent by which person. The program also can make a classification based on a single unseen message.
+                                Instead of reusing my <code>HTML</code> scraping from the Message Counter project, I decided to download my <code>JSON</code> messenger
+                                files from Facebook to load and manipulate the data from there.
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/fb_friend_identifier">Github Repository</a></span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/fb_friend_identifier">Github Repository</a></span> <br> <span class="text-primary"><a href="https://jthaller.github.io/weekly/Weekly21/">Explanatory Blog Post</a></span> </div>
                     </div>
+                    <!-- Facebook Message Counte -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <h3 class="mb-0">Facebook Message Counter</h3>
+                            <div class="subheading mb-3">Python, HTML</div>
+                            <p> The purpose of this project was to see messaging trends between my friend and me. Who sends more messages? Are there any anomaly? 
+                                The main challenge of this project was to scrape the data and organize into a usable format. <code>BeautifulSoup4</code>
+                                was used in the HTML scrape, with the message content and senders saved into CSV spreadsheets. The CSV's were then loaded into a <code>Pandas
+                                DataFrame</code>, where I could write queries to count message numbers according to time-stamps. <code>Matplotlib</code> and <code>Seaborn
+                                </code> were used for data visualization.
+                            </p>
+                            <img src="https://github.com/jthaller/fb_message_counter/blob/master/example_images/David_Thaller_friendship_comparison.png?raw=true"  class="center99">
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/fb_message_counter">Github Repository</a></span></div>
                     </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
+                    <!-- Titanic -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Titanic</h3>
+                            <div class="subheading mb-3">Python</div>
+                            <p> The classic first project for anyone's machine learning journey. I tried a variety of machine learning models, eventually deciding
+                                to tune the hyperparameters for <code>XG-Boost</code> and include a new interaction term between fare paid and passenger's sex. I spent some time 
+                                stacking several models, but ended up abandoning this approach as it is impractical for most professional applications.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary"><a href="https://www.kaggle.com/fusshandschuhe/titanic-data-science-solutions">Jupyter Notebook</a></span> <br> <span class="text-primary"><a href="https://github.com/jthaller/Titanic">Github Repository</a></span> </div>
+                    </div>
+                    <!-- Toothbrush  -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Toothbrushing Patterns</h3>
+                            <div class="subheading mb-3">Python</div>
+                            <p> Ever wonder about your toothbrushing patterns? No? Fair enough. My electric toothbrush actually happens to 
+                                record lots of data, including the exact time and duration of every brushing seesion, as well as the percent of 
+                                tooth coverage (and location!) during each session. Colgate doesn't let you download your data, but they let you synch
+                                your data with Apple Healthkit, which does let you download your data as an <code>XML</code> file. I imported this data into 
+                                <code>EXCEL</code> and <code>Pandas</code> and created this heat map of 5 months of my tootbrushing data.
+                            </p>
+                        <img src="assets/img/toothbrush-heatmap.png" class="center99">
+                        </div>
+                        <!-- <div class="flex-shrink-0"><span class="text-primary"><a href="https://www.kaggle.com/fusshandschuhe/titanic-data-science-solutions">Jupyter Notebook</a></span> <br> <span class="text-primary"><a href="https://github.com/jthaller/Titanic">Github Repository</a></span> </div> -->
+                    </div>
+                    <!-- Image Classifier -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Image Classifier</h3>
+                            <div class="subheading mb-3">Python</div>
+                            <p>I've written several CIFAR-10 and MNIST classifier projects, and will include most of them here. The first classifier was a <code>neural network</code>
+                                written from scratch. I used a pretty simple architecture, and obtained un-remarkable results. I then wrote a more complicated network
+                                using <code>Py-Torch lighting</code>. Then I improved upon it by implementing <code>CNN's</code>, then <code>RNN's</code>, and finally including transfer learning. This was all work
+                                for a Deep Learning class at the Technical University of Munich. Because these are HW solution, I have to keep my Colab Notebooks and Github Repository
+                                private, at least for a few years.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -91,22 +233,28 @@
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">ERAMSUS MUNDUS</h3>
+                            <h3 class="mb-0">ERASMUS MUNDUS</h3>
                             <div class="subheading mb-3">Masters in Materials Science Dual-Degree Program</div>
-                            <div><b>Technical University of Munich + Ludwig Maximilians University</b></div>
-                            <p>Joint M.Sc. in Geomaterials and Geochemistry</p>
-                            <div><b>Adam Mickiwicz University Poznan, Poland</b></div>
-                            <p>M.Sc. in Physics of Advanced Materials for Energy Processing</p>
+                            <div><b>Ludwig Maximilians and Technical University of Munich, Germany</b></div>
+                            <!-- <p>Joint M.Sc. in Geomaterials and Geochemistry</p> -->
+                            <p>Joint M.S. in Materials Science and Engineering</p>
+                            <div><b>Adam Mickiewicz University Poznan, Poland</b></div>
+                            <!-- <p>M.Sc. in Physics of Advanced Materials for Energy Processing</p> -->
+                            <p>M.S. in Applied Physics</p>
+                            <div><b>Brookhaven National Laboratory, New York</b></div>
+                            <p><a href="https://github.com/jthaller/BNL_Thesis/blob/main/MainDraft.pdf">Thesis: Investigation of Bond Strain Effects on XANES Spectra via Artificial Neural Networks</a></p>
+                            
+                            <!-- <div></div> -->
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Sept. 2019 - Aug. 2021 (in progress)</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">Sept. 2019 - Aug. 2021</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Williams College</h3>
-                            <div class="subheading mb-3">Bachelor of Arts, with Honors</div>
+                            <div class="subheading mb-3">Bachelor of Arts with Honors</div>
                             <div>Physics - Pre-Engineering Studies</div>
-                            <p>GPA: 3.3</p>
-                            <p><a href="https://github.com/jthaller/Diplomarbeit/blob/master/JKT_MainDraft.pdf">Thesis</a> </p>
+                            <!-- <p>GPA: 3.3</p> -->
+                            <p><a href="https://github.com/jthaller/Diplomarbeit/blob/master/JKT_MainDraft.pdf">Thesis: Towards an Adhesion Based Measurement of Strain-Dependent Surface Stress in Soft Solids</a> </p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Sept. 2015 - May 2019</span></div>
                     </div>
@@ -118,98 +266,129 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <div class="subheading mb-3">Programming Languages & Competency</div>
                     <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                        <li class="svg-item"><img src="assets\img\matlab_icon.svg"/></li>
+                        <li class="list-inline-item"><i class="fab fa-java"></i></li>
+                        <!-- <img src="https://img.icons8.com/ios/50/000000/wolfram-alpha.png"/> -->
+                        <li class="svg-item"><img src="assets\img\Mathematica.svg"></li>
+                        
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>             
+                        <li class="list-inline-item"><i class="fas fa-database"></i></li>              
+                        <li class="list-inline-item"></li><i class="fab fa-r-project"></i></li>
+<!-- ADD a Julia SVG logo here in grey -->
                     </ul>
-                    <div class="subheading mb-3">Workflow</div>
+                    
                     <ul class="fa-ul mb-0">
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
+                            <strong>Python</strong>, 5 years. Expert.
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
+                            <strong>MATLAB</strong>, 5 years. Expert.
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
+                            <strong>Java</strong>, 7 years. Proficient (just rusty)
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
+                            <strong>Mathematica</strong>, 4 years. Proficient.
                         </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <strong>HTML</strong>, 4 years. Proficient.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <strong>SQL</strong>, 2 year. Proficient.
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <strong>R</strong>, 1 year. Basic Familiarity.
+                        </li>
+                        <!-- <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            <strong>Julia</strong>, 1 year. Basic Familiarity.
+                        </li> -->
                     </ul>
                 </div>
             </section>
             <hr class="m-0" />
+            <!-- Coursework-->
+            <section class="resume-section" id="coursework">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Relevant Coursework</h2>
+                    <ul class="fa-ul mb-0">
+                        <li>
+                            <span class="fa-li"><i class="fas fa-laptop"></i></span>
+                            Intro to Machine Learning
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-laptop"></i></span>
+                            Deep Learning
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-laptop"></i></span>
+                            Computational Materials Design
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-laptop"></i></span>
+                            Molecular Dynamics Simulations
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-atom"></i></span>
+                            Particle Physics
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-atom"></i></span>
+                            General Relativity
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-atom"></i></span>
+                            Condensed Matter Physics
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-atom"></i></span>
+                            Statistical Mechanics
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-calculator"></i></span>
+                            Multivariate Calculus
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-calculator"></i></span>
+                            Linear Algebra
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-calculator"></i></span>
+                            Partial Differential Equations
+                        </li>
+                    </ul>
+                </div>
+            </section>
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+                    <p>
+                    I'm happiest in life when watching the Liverpool game with a fresh cup of coffee and good company. 
+            
+                    When the weather is nice, I enjoy running. I was a sprinter and captain of the Track team in college, but I'm
+                    trying to make the great transition to distance running.
+                    I'm not sure I'll ever pick up my bassoon again, but I still enjoy playing jazz piano every day.
+                    </p>
+                    <p>
+                    To see what I've been working on, checkout out my <a href = "https://jthaller.github.io">blog</ahref></a>. Each week I recap <i>what I've done</i>,
+                    <i>what I've learned</i>, and decide <i>what I'll do next</i>. I've found this helps consolidate what I've learned, as well as keep me 
+                    accountable for coninously learning more about data science and programming.
+                    </p>
+                   
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
-                </div>
-            </section>
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
