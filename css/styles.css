@@ -419,6 +419,63 @@ h6, .h6 {
   line-height: 1.2;
 }
 
+/* added by me  */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center80 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.left40 {
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+  width: 40%;
+}
+.right40 {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  width: 40%;
+}
+
+.center99 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+}
+
+/* added by me */
+/* div.wrap {
+  width: 100%;
+  border: 1px solid #f00;
+  height: 500px;
+  position: relative;
+}
+
+.wrap img {
+  border: 1px solid blue;
+   position: absolute;
+  bottom: 0;
+}
+
+.wrap img:nth-of-type(1) {
+  left: 0;
+}
+
+.wrap img:nth-of-type(2) {
+  right: 0;
+} */
+/* added by me */
+
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -452,6 +509,13 @@ mark,
   display: inline-block;
 }
 .list-inline-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.svg-item {
+  display: inline-block;
+}
+.svg-item:not(:last-child) {
   margin-right: 0.5rem;
 }
 
@@ -10101,11 +10165,13 @@ p.lead {
 }
 .social-icons .social-icon:hover {
   background-color: #09337d;
+  cursor: pointer
 }
 
 .dev-icons {
   font-size: 3rem;
 }
+
 
 section.resume-section {
   display: flex;
