@@ -26,7 +26,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         env: # Set Secret Key
-          secret_adobe_api_key: $ADOBE_API_KEY
+          secret_adobe_api_key:  ${{ secrets.ADOBE_API_KEY }}
 
       # I believe the site is pre-built, otherwise an install/build step goes here
 
