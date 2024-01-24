@@ -4,7 +4,7 @@
     * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
     */
 
-const GITHUB_URL = "https://raw.githubusercontent.com/jthaller/resume_url_hosting/32236b74a33e69f6e12ffd6354e38c95ddcc5ed4/Jeremy_Thaller_Resume.pdf"
+const GITHUB_URL = "https://raw.githubusercontent.com/jthaller/resume_url_hosting/32236b74a33e69f6e12ffd6354e38c95ddcc5ed4/Jeremy_Thaller_Resume.pdf";
    
    (function ($) {
     "use strict"; // Start of use strict
@@ -105,4 +105,6 @@ function previewFile()
             fileName: "Jeremy_Thaller_Resume.pdf"
         }
     }, viewerConfig);
+
+    // event.preventDefault()
 };
