@@ -63,7 +63,6 @@ const viewerConfig = {
     defaultViewMode: "FIT_PAGE"
 };
 
-const api_key = process.env.secret_adobe_api_key
 
 /* Wait for Adobe Document Services PDF Embed API to be ready and enable the View PDF button */
 document.addEventListener("adobe_dc_view_sdk.ready", function () {
@@ -73,6 +72,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
 /* Function to render the file using PDF Embed API. */
 function previewFile()
 {
+    var api_key = process.env.secret_adobe_api_key
     /* Initialize the AdobeDC View object */
     var adobeDCView = new AdobeDC.View({
         /* Pass your registered client id */
