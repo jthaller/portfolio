@@ -5,7 +5,8 @@
     */
 
 const GITHUB_URL = "https://raw.githubusercontent.com/jthaller/resume_url_hosting/32236b74a33e69f6e12ffd6354e38c95ddcc5ed4/Jeremy_Thaller_Resume.pdf";
-   
+const api_key = process.env.secret_adobe_api_key; 
+
    (function ($) {
     "use strict"; // Start of use strict
 
@@ -72,7 +73,6 @@ document.addEventListener("adobe_dc_view_sdk.ready", function () {
 /* Function to render the file using PDF Embed API. */
 function previewFile()
 {
-    var api_key = process.env.secret_adobe_api_key
     /* Initialize the AdobeDC View object */
     var adobeDCView = new AdobeDC.View({
         /* Pass your registered client id */
