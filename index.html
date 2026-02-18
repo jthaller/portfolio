@@ -92,7 +92,32 @@
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
-                    <!-- Semiconductor Project -->
+                    
+                    <!-- Spotify Project -->
+                    <div class="resume-section-content">
+                        
+                        <!-- Spotify Project -->
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <h3 class="mb-0">Recommendation Algorithm with Spotify and Apache Airflow</h3>
+                                <div class="subheading mb-3">Python</div>
+                                <p> 
+                                    In this project, I built a full-stack Spotify recommendation system using Apache Airflow to orchestrate ETL and machine learning. Streaming data from the Spotify API is ingested on a schedule into a <code>PostgreSQL</code> warehouse, with a custom OAuth flow that uses a long-lived <code>refresh token</code> and Airflow variables to automatically maintain API access. On top of this curated dataset, I implemented multiple recommendation strategies: cosine similarity on Spotify’s track-level audio features and <code>Word2Vec</code>-style song embeddings trained on a million public playlists, capturing how songs co-occur in real user listening behavior. The final system composes a personalized, AI-generated playlist based on my recent listening history and pushes it directly to my Spotify account via the Web API, demonstrating end-to-end ownership across data engineering, MLOps, and applied recommendation modeling.
+                                </p>
+                            </div>
+                            <div class="flex-shrink-0 text-md-end">
+                                <span class="text-primary">
+                                    <a href="https://github.com/jthaller/Spotify-Airflow-ETL">Github Repository</a>
+                                </span>
+                                <br>
+                                <span class="text-primary">
+                                    <a href="https://thaller.dev/miscellaneous/airflowETL/">Explanatory Blog Post</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accredited Investor Project -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Accredited Investors: Binary Classification and Probabilities</h3>
@@ -133,7 +158,7 @@
                                 search was used for <code>hyperparameter tuning</code>.
                             </p>
                             <!-- <img src="https://www.acs.org/content/dam/acsorg/molecule/archive-new/tetracene-3d.png" class="center"> -->
-                            <img src="https://cdn-0.enacademic.com/pictures/enwiki/84/Tetracene-3D-balls.png" class="center">
+                            <img src="assets/img/tetracene-3d.png" class="center">
                         <!-- </div> -->
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/Tetracene_TI_ML">Github Repository</a></span></div>
@@ -174,7 +199,7 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/fb_friend_identifier">Github Repository</a></span> <br> <span class="text-primary"><a href="https://jthaller.github.io/weekly/Weekly21/">Explanatory Blog Post</a></span> </div>
                     </div>
-                    <!-- Facebook Message Counte -->
+                    <!-- Facebook Message Counter -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Facebook Message Counter</h3>
@@ -185,7 +210,7 @@
                                 DataFrame</code>, where I could write queries to count message numbers according to time-stamps. <code>Matplotlib</code> and <code>Seaborn
                                 </code> were used for data visualization.
                             </p>
-                            <img src="https://github.com/jthaller/fb_message_counter/blob/master/example_images/David_Thaller_friendship_comparison.png?raw=true"  class="center99">
+                            <img src="assets/img/David_Thaller_comparison_cumsum.png"  class="center99">
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary"><a href="https://github.com/jthaller/fb_message_counter">Github Repository</a></span></div>
                     </div>
