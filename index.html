@@ -92,7 +92,27 @@
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
-                    
+
+                    <!-- Agentic Spotify Playlist Creator -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Agentic Spotify Playlist Creator</h3>
+                            <div class="subheading mb-3">Python, Streamlit, Gemini AI</div>
+                            <p>
+                                A Streamlit web app that lets you describe a playlist in natural language and have a Gemini AI agent iteratively search Spotify, analyze results, and curate the perfect tracklist — then create it directly in your Spotify account. Gemini operates in a <code>tool-use agentic loop</code>, deciding each iteration which actions to take: searching the catalog, seeding recommendations, fetching audio features, or calling <code>finalize_playlist</code> — a loop-exit signal (not an API call) that tells the orchestrator the agent is satisfied. Tool calls within each iteration are dispatched in parallel via <code>ThreadPoolExecutor</code>. A <code>PlaylistPlanner</code> layer pre-fetches the user's listening history and bakes it into the system prompt, giving Gemini personalization context without needing to call user-data APIs itself. Built with <code>Spotipy</code>, <code>Pydantic</code>, and <code>Loguru</code>, with structured log rotation and a <code>GoAccess</code> dashboard for analytics. Deployed on Streamlit Cloud.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0 text-md-end">
+                            <span class="text-primary">
+                                <a href="https://github.com/jthaller/agentic-spotify-playlist-creator">Github Repository</a>
+                            </span>
+                            <br>
+                            <span class="text-primary">
+                                <a href="https://agentic-spotify-playlist-creator.streamlit.app/">Live Demo</a>
+                            </span>
+                        </div>
+                    </div>
+
                     <!-- Spotify Project -->
                     <div class="resume-section-content">
                         
