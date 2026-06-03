@@ -93,6 +93,26 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Projects</h2>
 
+                    <!-- Fi Nightlight -->
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Fi Nightlight: Serverless Dog Collar Automation</h3>
+                            <div class="subheading mb-3">Python, GCP Cloud Functions, Cloud Scheduler, Firestore</div>
+                            <p>
+                                My dog's <a href="https://tryfi.com/">Fi GPS collar</a> tracks her location and defines safe zones, but has no way to automatically turn on the LED at night. I built a serverless automation on GCP's free tier that solves this. A single <code>Cloud Function</code> runs every 5 minutes via <code>Cloud Scheduler</code>, calculates sunset from GPS coordinates using the <code>astral</code> library (pure math, no external API), and exits early during the day. After sunset, it polls the Fi API via <code>pytryfi</code> to check if the dog is outside the safe zone — if so, it turns the collar LED on. When the dog returns, the LED turns off. State is persisted in a single <code>Firestore</code> document so the function knows whether it already sent a command. The function is authenticated via <code>OIDC</code> so only the scheduler can invoke it. The entire system costs $0/month (288 invocations/day, well within free tier) and also supports local and Docker deployments.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0 text-md-end">
+                            <span class="text-primary">
+                                <a href="https://github.com/jthaller/fi-nightlight">Github Repository</a>
+                            </span>
+                            <br>
+                            <span class="text-primary">
+                                <a href="https://thaller.dev/miscellaneous/fi-nightlight/">Blog Post</a>
+                            </span>
+                        </div>
+                    </div>
+
                     <!-- Agentic Spotify Playlist Creator -->
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
